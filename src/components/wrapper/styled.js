@@ -8,8 +8,6 @@ const ContainerWrapper = styled.div`
   align-content: stretch;
   align-items: center;
 
-  border: 1px solid black;
-  border-radius: 12px;
   margin: 62px 102px;
 `;
 

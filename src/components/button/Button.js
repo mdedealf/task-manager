@@ -1,10 +1,10 @@
 import ButtonStyled from "./styled";
 
 const Button = (props) => {
-  const { btnName, color, bgColor } = props;
+  const { btnName, color, bgColor, onClick } = props;
   return (
     <>
-      <ButtonStyled color={color} bgColor={bgColor}>
+      <ButtonStyled color={color} bgColor={bgColor} onClick={onClick}>
         {btnName}
       </ButtonStyled>
     </>

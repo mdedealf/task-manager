@@ -1,12 +1,9 @@
-import Header from "./components/header/Header";
-import { ContainerWrapper } from "./components/wrapper/styled";
+import Tasks from "./container/Tasks";
 
 const App = () => {
   return (
     <>
-      <ContainerWrapper>
-        <Header />
-      </ContainerWrapper>
+      <Tasks />
     </>
   );
 };
