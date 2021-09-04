@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const CardListContainer = styled.div`
   display: flex;
@@ -14,6 +14,17 @@ const CardListContainer = styled.div`
   border-radius: 12px;
   padding: 24px 32px;
   width: 500px;
+
+  ${(task) =>
+    task.$reminder &&
+    css`
+      border-left: 8px solid blue;
+    `}
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+  }
 
   div {
     font-size: 20px;

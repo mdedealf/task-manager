@@ -10,6 +10,7 @@ const ButtonStyled = styled.button`
   font-weight: 700;
   font-size: 16px;
   color: black;
+  background-color: white;
 
   &:hover {
     cursor: pointer;
