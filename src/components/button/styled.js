@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import propTypes from "prop-types";
 
 const ButtonStyled = styled.button`
@@ -12,9 +12,15 @@ const ButtonStyled = styled.button`
   color: black;
   background-color: white;
 
+  ${(props) =>
+    props.$block &&
+    css`
+      width: 100%;
+    `};
+
   &:hover {
     cursor: pointer;
-    border: none;
+    border: 1px solid white;
     background-color: ${(props) => props.bgColor};
     color: ${(props) => props.color};
   }

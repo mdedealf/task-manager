@@ -3,8 +3,16 @@ import { InputStyled } from "./styled";
 import PropTypes from "prop-types";
 
 const InputField = (props) => {
-  const { placeholder, ...rest } = props;
-  return <InputStyled placeholder={placeholder} {...rest} />;
+  const { placeholder, type, value, onChange, ...rest } = props;
+  return (
+    <InputStyled
+      value={value}
+      type={type}
+      placeholder={placeholder}
+      onChange={onChange}
+      {...rest}
+    />
+  );
 };
 
 InputField.defaultProps = {
